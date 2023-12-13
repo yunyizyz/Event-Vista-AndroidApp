@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/title_textview"
+            android:paddingTop="5dp"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Title Text"
+            tools:ignore="MissingConstraints"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/facebook"
+            android:id="@+id/facebook_icon"/>
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/twitter"
+            android:id="@+id/twitter_icon"/>
+
+        <ImageView
+            android:id="@+id/detail_heart"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/heart_outline"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

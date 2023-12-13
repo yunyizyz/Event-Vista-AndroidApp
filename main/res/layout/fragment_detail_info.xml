@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailArtistFragment"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:ignore="UseSwitchCompatOrMaterialXml"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+<RelativeLayout
+    android:id="@+id/info_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="600dp"
+    android:background="@drawable/rounded_corners"
+    tools:ignore="UseSwitchCompatOrMaterialXml"
+    android:fitsSystemWindows="true"
+    android:padding="30dp"
+    android:layout_marginBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/info_layout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist/Teams"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Venue"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Genres"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price Range"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ticket Status"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buy Ticket At"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="130dp">
+
+        <TextView
+            android:id="@+id/info_artist_teams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/info_venue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/info_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/info_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/info_genres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/info_price_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:id="@+id/info_ticket_status"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:background="@drawable/status_on"
+            android:padding="6dp"
+            android:text="On Sale"/>
+
+        <TextView
+            android:id="@+id/info_buy_ticket_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/seatmap_image"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/info_layout2"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
+

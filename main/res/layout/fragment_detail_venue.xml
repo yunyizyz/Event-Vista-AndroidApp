@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DetailVenueFragment"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    tools:ignore="UseSwitchCompatOrMaterialXml"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="UseSwitchCompatOrMaterialXml"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/venue1"
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_corners"
+        android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/venue_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City/State"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Info"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="130dp">
+
+        <TextView
+            android:id="@+id/venue_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/venue_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/venue_cs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+
+        <TextView
+            android:id="@+id/venue_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:paddingTop="10dp"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="300dp"
+        android:layout_height="360dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/venue_layout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/map"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/venue2"
+        android:layout_width="600dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/contact_background"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/venue1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Hours"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/open_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Rules"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/general_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contact Info"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Child Rule"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:paddingTop="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/child_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="General Rules"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="30dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

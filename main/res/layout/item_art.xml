@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:background="@drawable/event_background"
+    android:padding="10dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:elevation="4dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginTop="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/artist1"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:elevation="4dp">
+
+        <ImageView
+            android:id="@+id/artist_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:background="@drawable/image_background"
+            android:layout_marginEnd="12dp"
+            android:clipToOutline="true"
+            android:outlineProvider="background"/>
+
+        <LinearLayout
+            android:layout_height="100dp"
+            android:layout_width="130dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+
+            <TextView
+                android:id="@+id/artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"/>
+
+
+            <TextView
+                android:id="@+id/artist_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+
+
+            <TextView
+                android:id="@+id/event_segment"
+                android:text="Check out on Spotify"
+                android:textColor="@android:color/holo_green_light"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:layout_gravity="bottom"/>
+
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="80dp"
+            android:layout_height="100dp">
+
+            <ProgressBar
+                android:id="@+id/art_pop1"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="10dp"
+                android:progress="60"/>
+
+            <TextView
+                android:id="@+id/art_pop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="60"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginStart="28dp"/>
+
+            <TextView
+                android:text="Popularity"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Popular Albums"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/darker_gray"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/artist2"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:elevation="4dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/album1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/album2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/album3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

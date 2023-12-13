@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="135dp"
+    android:orientation="horizontal"
+    android:background="@drawable/event_background"
+    android:padding="16dp"
+    android:layout_margin="6dp"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/event_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/image_background"
+        android:layout_marginEnd="12dp"
+        android:clipToOutline="true"
+        android:outlineProvider="background"/>
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="140dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+
+        <TextView
+            android:id="@+id/event_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+
+        <TextView
+            android:id="@+id/event_segment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/darker_gray"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:layout_gravity="bottom"
+            android:clickable="true"/>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="92dp"
+        android:layout_height="100dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_date"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="end"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_gravity="end"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/event_favorite"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/heart_outline"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>
